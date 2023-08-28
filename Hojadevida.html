@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida </title>
+    <link rel="icon" href="Imagenes/imagen.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000000;
+        }
+        .profile-img {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music" loop autoplay>
+        <source src="Musica/Post Malone, Swae Lee - Sunflower (Spider-Man Into the Spider-Verse).mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <img src="Imagenes/foto.jpg" alt="Mi Foto" class="profile-img">
+        <h1>Juan Camilo Anzola Aldana </h1>
+        <p>Desarollador de Sofware</p>
+        <hr>
+        <h2>Información de Contacto</h2>
+        <p>Email: juanja.2302@iclod.com</p>
+        <p>Teléfono: +57 3184650011</p>
+        <hr>
+        <h2>Sobre Mi</h2>
+        <p>Joven estudiante de desarrollo de software de la Universidad San Buenaventura con ganas de aprender experiencias nuevas en este campo para poder crecer como persona y profecionalmete, joven puntual, dedicado, constante, aprendo facil y rapido lo que no se, con muchas ganas de crecer</p>
+        <hr>
+        <h2>Educación</h2>
+        <p>Primaria: Liceo Altablanca Feb-2006 - Nov-2014</p> 
+        <p>Bachillerato: C . E Sagrada Familia de Nzaret Feb-2015 - Nov-2020</p> 
+        <p>Universidad: Universidad San Buenaventura Feb-2022 - Actualmente </p>
+        <hr>
+        <h2>Experiencia Laboral</h2>
+        <p>Papeleria Fuxcia - Vendedor - 2021 - 2021/2</p>
+        <p>Food Bazar - Vendedor - 2022 - 2022/2</p>
+        <p>Sicte(Claro) - Tecnico en redes externas - 2023 - 2023/2</p>
+        <hr>
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Compañerista</li>
+            <li>Trabajo en grupo </li>
+            <li>Puntual</li>
+            <li>Trabajador</li>
+            <li>Amable</li>
+            <li>Honesto</li>
+        </ul>
+    </div>
+    <script>
+    
+        const music = document.getElementById('background-music');
+        const container = document.querySelector('.container');
+
+        container.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        });
+    </script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Estilos/Estilos.css">
+    </head>
+</body>
+</html>
